@@ -434,9 +434,9 @@ a {
 
     position: absolute;
 
-    z-index: 5;
+    z-index: 10;
 
-    top: 45px;
+    top: 25px;
 
     right: 4%;
 
@@ -457,11 +457,8 @@ a {
 
     position: relative;
 
-    width: 100%;
-
-    max-width: 440px;
-
-    aspect-ratio: 1 / 1;
+    width: 380;
+    height: 430px;
 
     display: flex;
 
@@ -480,11 +477,11 @@ a {
 
     position: absolute;
 
-    width: 88%;
+    width: 330;
 
-    height: 88%;
+    height: 330px;
 
-    border: 4px solid #ff7900;
+    border: 5px solid #ff7900;
 
     border-radius: 50%;
 
@@ -494,7 +491,7 @@ a {
 
         0 0 30px #ff6500,
 
-        0 0 55px rgba(255,80,0,0.8);
+        0 0 6px rgba(255,80,0,0.8);
 
     z-index: 1;
 
@@ -553,7 +550,7 @@ a {
 
     position: relative;
 
-    z-index: 6;
+    z-index: 5;
 
     margin-top: -45px;
 
@@ -561,7 +558,7 @@ a {
 
     font-family: 'Alex Brush', cursive;
 
-    font-size: clamp(32px, 3.5vw, 52px);
+    font-size: clamp(32px, 3.5vw, 48px);
 
     font-weight: 500;
 
@@ -1036,6 +1033,60 @@ a {
         font-size: 11px;
 
         padding: 8px 12px;
+
+    }
+
+}
+@media (max-width: 1050px) {
+
+    .profile-area {
+
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        width: 100%;
+
+        margin: 30px auto;
+
+    }
+
+    .profile-fire-ring {
+
+        width: 320px;
+        height: 360px;
+
+    }
+
+    .profile-fire-ring::before {
+
+        width: 280px;
+        height: 280px;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .profile-fire-ring {
+
+        width: 280px;
+        height: 320px;
+
+    }
+
+    .profile-fire-ring::before {
+
+        width: 240px;
+        height: 240px;
+
+    }
+
+    .signature {
+
+        font-size: 36px;
 
     }
 
