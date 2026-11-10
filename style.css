@@ -142,7 +142,7 @@ a {
 .hero-content {
     position: relative;
     z-index: 2;
-    width: 43%;
+    width: 38%;
     padding-top: 25px;
 }
 
@@ -277,14 +277,14 @@ a {
 .profile-area {
     position: relative;
     z-index: 5;
-    width: 33%;
+    width: 28%;
     margin-left: auto;
-    margin-right: 1.5%;
+    margin-right: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 .profile-fire-ring {
@@ -296,7 +296,7 @@ a {
 }
 
 .profile-frame {
-    width: min(100%, 310px);
+    width: min(100%, 250px);
     height: auto;
     border: none !important;
     background: transparent !important;
