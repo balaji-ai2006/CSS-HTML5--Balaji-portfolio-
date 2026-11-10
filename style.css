@@ -62,7 +62,7 @@ a {
     white-space: nowrap;
 }
 
-.brand b {
+.brand  {
     color: #ff7900;
 }
 
@@ -241,7 +241,7 @@ a {
 
 }
 
-.hero-content h1 span {
+.hero-content h1  {
 
     color: #ff7900;
 
@@ -256,7 +256,7 @@ a {
 
     font-weight: 500;
 
-    color: #ddd;
+    color: white;
 
     margin-bottom: 20px;
 
@@ -432,23 +432,24 @@ a {
 
 .profile-area {
 
-    position: absolute;
+   position: absolute;
 
-    z-index: 10;
+   z-index: 5;
 
-    top: 25px;
+   top: 45px;
 
-    right: 4%;
+   right: 2%;
 
-    width: 36%;
+   width: 29%;
 
-    display: flex;
+   display: flex;
 
-    flex-direction: column;
+   flex-direction: column;
 
-    align-items: center;
+   align-items: center;
 
 }
+
 
 
 /* PROFILE CIRCLE */
@@ -457,8 +458,8 @@ a {
 
     position: relative;
 
-    width: 380;
-    height: 430px;
+    width: 320px;
+    height: 360px;
 
     display: flex;
 
@@ -477,9 +478,9 @@ a {
 
     position: absolute;
 
-    width: 330;
+    width: 270;
 
-    height: 330px;
+    height: 270px;
 
     border: 5px solid #ff7900;
 
@@ -1090,4 +1091,34 @@ a {
 
     }
 
+}
+/* Move Complete Profile Section to Right */
+
+.profile-area {
+    right: 0% !important;
+    transform: translateX(15px);
+}
+
+/* Keep Name and Availability Together */
+
+.signature {
+    margin-left: 100px;
+}
+
+.availability {
+    margin-left: 15px;
+}
+
+/* Mobile Adjustment */
+
+@media (max-width: 1050px) {
+    .profile-area {
+        right: auto !important;
+        transform: none;
+    }
+
+    .signature,
+    .availability {
+        margin-left: 0;
+    }
 }
