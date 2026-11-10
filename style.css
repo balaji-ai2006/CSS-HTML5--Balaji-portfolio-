@@ -279,12 +279,11 @@ a {
     z-index: 5;
     width: 28%;
     margin-left: auto;
-    margin-right: 0%;
+    margin-right: 2%;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 20px;
 }
 
 .profile-fire-ring {
@@ -296,12 +295,11 @@ a {
 }
 
 .profile-frame {
-    width: min(100%, 250px);
+    width: min(100%, 280px);
     height: auto;
     border: none !important;
     background: transparent !important;
     overflow: visible !important;
-    box-shadow: none !important;
 }
 
 .profile-frame img {
@@ -309,20 +307,20 @@ a {
     height: auto;
     display: block;
     object-fit: contain;
-    filter: drop-shadow(0 0 14px rgba(255, 120, 0, 0.85)) 
-            drop-shadow(0 0 28px rgba(255, 50, 0, 0.5));
+    filter: drop-shadow(0 0 16px rgba(255, 120, 0, 0.9)) 
+            drop-shadow(0 0 35px rgba(255, 50, 0, 0.5));
 }
 
 .signature {
     position: absolute;
-    bottom: 30px;
-    right: 0px;
+    bottom: 15px;
+    right: -15px;
     font-family: 'Alex Brush', cursive;
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 500;
     color: #ffffff;
     transform: rotate(-12deg);
-    text-shadow: 0 0 10px #ff7900, 0 0 22px #ff3b00;
+    text-shadow: 0 0 10px #ff7900, 0 0 20px #ff3b00;
     pointer-events: none;
     z-index: 6;
     white-space: nowrap;
@@ -333,13 +331,13 @@ a {
     align-items: center;
     gap: 8px;
     border: 1px solid rgba(255, 121, 0, 0.8);
-    background: rgba(5, 5, 5, 0.92);
+    background: rgba(4, 4, 4, 0.95);
     border-radius: 30px;
     padding: 6px 18px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     color: #ffffff;
-    margin-top: -8px;
+    margin-top: 10px;
     box-shadow: 0 0 14px rgba(255, 120, 0, 0.4);
     position: relative;
     z-index: 7;
