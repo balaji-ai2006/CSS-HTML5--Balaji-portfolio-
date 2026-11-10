@@ -1,5 +1,5 @@
 /* ===================================================
-   NARUTO THEME PORTFOLIO - BALAJI GUTTE (FINAL CSS)
+   NARUTO THEME PORTFOLIO - BALAJI GUTTE (FINAL STYLE)
 =================================================== */
 
 * {
@@ -105,19 +105,19 @@ a {
     box-shadow: 0 0 20px #ff7900;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* =========================================================
+   HERO SECTION (NARUTO & KURAMA CENTERED PROPERLY)
+========================================================= */
 .hero {
     min-height: calc(100vh - 75px);
     position: relative;
-    padding: 40px 4% 30px;
+    padding: 30px 3% 25px 4%;
     background-image: url("assets/naruto-bg.jpeg");
     background-size: cover;
-    background-position: center top;
+    background-position: center 15%;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -127,9 +127,9 @@ a {
     inset: 0;
     background: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.92) 0%,
-        rgba(0, 0, 0, 0.65) 35%,
-        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.60) 35%,
+        rgba(0, 0, 0, 0.15) 55%,
         rgba(0, 0, 0, 0.65) 100%
     );
     z-index: 1;
@@ -142,8 +142,8 @@ a {
 .hero-content {
     position: relative;
     z-index: 2;
-    width: 50%;
-    padding-top: 10px;
+    width: 43%;
+    padding-top: 25px;
 }
 
 .welcome {
@@ -271,17 +271,20 @@ a {
     box-shadow: 0 0 18px #ff7900;
 }
 
-/* ==============================================
-   PROFILE AREA (FRAME-FREE WITH ORANGE NEON GLOW)
-============================================== */
+/* =========================================================
+   PROFILE AREA (FAR RIGHT POSITIONED OVER GOLDEN FLAME)
+========================================================= */
 .profile-area {
     position: relative;
     z-index: 5;
-    width: 42%;
+    width: 33%;
+    margin-left: auto;
+    margin-right: 1.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    padding-top: 15px;
 }
 
 .profile-fire-ring {
@@ -292,12 +295,10 @@ a {
     width: 100%;
 }
 
-/* कोणतीही चौकट/बॉर्डर नाही - मूळ कटआउट फोटो दिसेल */
 .profile-frame {
-    width: min(100%, 360px);
+    width: min(100%, 310px);
     height: auto;
     border: none !important;
-    border-radius: 0 !important;
     background: transparent !important;
     overflow: visible !important;
     box-shadow: none !important;
@@ -308,41 +309,38 @@ a {
     height: auto;
     display: block;
     object-fit: contain;
-    /* कटआउटच्या कडांवर Neon Orange Glow इफेक्ट */
-    filter: drop-shadow(0 0 12px rgba(255, 120, 0, 0.8)) 
-            drop-shadow(0 0 28px rgba(255, 60, 0, 0.45));
+    filter: drop-shadow(0 0 14px rgba(255, 120, 0, 0.85)) 
+            drop-shadow(0 0 28px rgba(255, 50, 0, 0.5));
 }
 
-/* फोटोवर ओव्हरलॅप होणारी तिरकी सिग्नेचर */
 .signature {
     position: absolute;
-    bottom: 40px;
-    right: 25px;
+    bottom: 30px;
+    right: 0px;
     font-family: 'Alex Brush', cursive;
-    font-size: 54px;
+    font-size: 50px;
     font-weight: 500;
     color: #ffffff;
-    transform: rotate(-10deg);
+    transform: rotate(-12deg);
     text-shadow: 0 0 10px #ff7900, 0 0 22px #ff3b00;
     pointer-events: none;
     z-index: 6;
     white-space: nowrap;
 }
 
-/* हिरवा डॉट असलेला Available Badge */
 .availability {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    border: 1px solid rgba(255, 121, 0, 0.7);
-    background: rgba(5, 5, 5, 0.9);
+    border: 1px solid rgba(255, 121, 0, 0.8);
+    background: rgba(5, 5, 5, 0.92);
     border-radius: 30px;
-    padding: 7px 18px;
+    padding: 6px 18px;
     font-size: 13px;
     font-weight: 600;
     color: #ffffff;
-    margin-top: -12px;
-    box-shadow: 0 0 12px rgba(255, 120, 0, 0.35);
+    margin-top: -8px;
+    box-shadow: 0 0 14px rgba(255, 120, 0, 0.4);
     position: relative;
     z-index: 7;
 }
@@ -355,9 +353,9 @@ a {
     box-shadow: 0 0 10px #00ff66;
 }
 
-/* =========================
-   QUICK NAVIGATION CARDS
-========================= */
+/* =========================================================
+   QUICK NAVIGATION CARDS (CHAMFERED CORNERS & NEON BORDER)
+========================================================= */
 .quick-cards {
     width: 100%;
     position: relative;
@@ -365,7 +363,7 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .quick-card {
@@ -373,7 +371,6 @@ a {
     padding: 16px;
     background: rgba(12, 6, 2, 0.88);
     border: 1.5px solid #ff7900;
-    /* कट केलेले कोपरे (Chamfered Corner Design) */
     clip-path: polygon(14px 0%, 100% 0%, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0% 100%, 0% 14px);
     box-shadow: 0 0 15px rgba(255, 100, 0, 0.25);
     transition: 0.3s ease;
@@ -396,116 +393,4 @@ a {
     color: #ff7900;
     font-size: 18px;
     font-weight: 800;
-}
-
-.card-icon {
-    color: #ff9700;
-    font-size: 22px;
-}
-
-.quick-card h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-.quick-card p {
-    color: #aaa;
-    font-size: 12px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.footer {
-    min-height: 60px;
-    padding: 15px 4%;
-    background: #040404;
-    border-top: 1px solid rgba(255, 121, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    font-size: 12px;
-    color: #aaa;
-}
-
-.footer-center {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #ff7900;
-    font-size: 13px;
-}
-
-.footer-center span {
-    width: 35px;
-    height: 1px;
-    background: #ff7900;
-}
-
-.footer-center b {
-    color: #fff;
-}
-
-/* =========================
-   RESPONSIVENESS
-========================= */
-@media (max-width: 1050px) {
-    .hero-content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .welcome {
-        justify-content: center;
-    }
-
-    .description {
-        border-left: none;
-        border-top: 2px solid #ff7900;
-        padding-top: 12px;
-    }
-
-    .hero-buttons,
-    .social-links {
-        justify-content: center;
-    }
-
-    .profile-area {
-        width: 100%;
-        margin-top: 35px;
-    }
-
-    .signature {
-        position: static;
-        transform: rotate(0deg);
-        margin: 10px 0;
-    }
-
-    .quick-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 650px) {
-    .navbar {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .quick-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 420px) {
-    .quick-cards {
-        grid-template-columns: 1fr;
-    }
 }
