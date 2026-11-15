@@ -1,0 +1,561 @@
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    min-height: 76px;
+    padding: 12px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(8, 8, 8, 0.97);
+    border-bottom: 1px solid rgba(212, 164, 74, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.brand-logo {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #d7a94d;
+    border-radius: 12px;
+    color: #e9bd65;
+}
+
+.brand b {
+    color: #dcae55;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #c9c9c9;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e7b957;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #dcae55;
+}
+
+.resume-btn {
+    padding: 11px 19px;
+    border: 1px solid #dcae55;
+    border-radius: 7px;
+    color: #eac36e;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #dcae55;
+    color: #080808;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.skills-page {
+    min-height: 100vh;
+    padding: 65px 7%;
+    background:
+        radial-gradient(
+            ellipse at 90% 5%,
+            rgba(181, 133, 46, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 5% 55%,
+            rgba(181, 133, 46, 0.05),
+            transparent 35%
+        ),
+        #080808;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.skills-hero {
+    margin-bottom: 65px;
+}
+
+.eyebrow {
+    color: #d9aa50;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.skills-hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 68px);
+    margin: 17px 0;
+    letter-spacing: -2px;
+}
+
+.skills-hero h1 span {
+    color: #d9aa50;
+    font-style: italic;
+}
+
+.skills-hero > p {
+    color: #aaa;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.heading-line {
+    width: 190px;
+    height: 2px;
+    margin-top: 22px;
+    background: linear-gradient(
+        to right,
+        #e7b957,
+        transparent
+    );
+}
+
+
+/* =========================
+   SKILL INTRO
+========================= */
+
+.skill-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 65px;
+    background: linear-gradient(
+        110deg,
+        #1a1711,
+        #0c0c0c
+    );
+    border: 1px solid rgba(210, 166, 80, 0.4);
+    border-radius: 12px;
+}
+
+.section-label {
+    color: #d9aa50;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.skill-intro h2 {
+    margin: 12px 0;
+    font-family: Georgia, serif;
+    font-size: 29px;
+}
+
+.skill-intro h2 span,
+.learning-section h2 span {
+    color: #e0b453;
+    font-style: italic;
+}
+
+.skill-intro p {
+    max-width: 650px;
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.intro-symbol {
+    color: #d8aa50;
+    font-family: monospace;
+    font-size: 75px;
+    padding: 15px;
+    text-shadow: 0 0 25px rgba(218, 174, 83, 0.4);
+}
+
+
+/* =========================
+   CATEGORY HEADING
+========================= */
+
+.skill-category {
+    margin-bottom: 65px;
+}
+
+.category-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgba(210, 166, 80, 0.25);
+}
+
+.category-number {
+    color: #d9aa50;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.category-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+.category-heading p {
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   SKILLS GRID
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    position: relative;
+    min-height: 230px;
+    padding: 27px;
+    background: linear-gradient(
+        145deg,
+        #1c1913,
+        #101010 65%
+    );
+    border: 1px solid rgba(210, 166, 80, 0.35);
+    border-radius: 12px;
+    transition: 0.35s;
+    overflow: hidden;
+}
+
+.skill-card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: -65px;
+    top: -65px;
+    background: rgba(218, 174, 83, 0.08);
+    border-radius: 50%;
+    transition: 0.35s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #e3b75e;
+    box-shadow: 0 12px 30px rgba(190, 143, 53, 0.12);
+}
+
+.skill-card:hover::before {
+    transform: scale(2);
+}
+
+.skill-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    background: rgba(212, 164, 74, 0.1);
+    border: 1px solid rgba(212, 164, 74, 0.45);
+    border-radius: 12px;
+    color: #e5b957;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.skill-card h3 {
+    font-size: 19px;
+    margin-bottom: 11px;
+    color: #f1d18e;
+}
+
+.skill-card p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(212, 164, 74, 0.09);
+    border: 1px solid rgba(212, 164, 74, 0.25);
+    border-radius: 20px;
+    color: #d9aa50;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   TOOLS SECTION
+========================= */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    min-height: 130px;
+    padding: 20px;
+    background: #15130f;
+    border: 1px solid rgba(210, 166, 80, 0.35);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.tool-item:hover {
+    border-color: #e5b957;
+    background: #211b10;
+    transform: translateY(-5px);
+}
+
+.tool-item span {
+    font-size: 30px;
+}
+
+.tool-item p {
+    color: #ddd;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* =========================
+   LEARNING SECTION
+========================= */
+
+.learning-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: linear-gradient(
+        100deg,
+        rgba(190, 143, 53, 0.12),
+        #111111
+    );
+    border: 1px solid rgba(210, 166, 80, 0.4);
+    border-radius: 12px;
+}
+
+.learning-icon {
+    color: #e3b75e;
+    font-size: 45px;
+}
+
+.learning-section h2 {
+    margin: 10px 0;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.learning-section p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.learning-signature {
+    margin-left: auto;
+    color: #e1b65c;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    min-height: 65px;
+    padding: 18px 4%;
+    background: #050505;
+    border-top: 1px solid rgba(210, 166, 80, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.footer-center {
+    color: #dcb45e;
+    font-size: 14px;
+}
+
+.footer-center span {
+    color: white;
+    padding: 0 7px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-section {
+        flex-wrap: wrap;
+    }
+
+    .learning-signature {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 16px 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .skills-page {
+        padding: 45px 5%;
+    }
+
+    .skills-hero h1 {
+        font-size: 42px;
+    }
+
+    .skill-intro {
+        padding: 22px;
+    }
+
+    .intro-symbol {
+        display: none;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-heading h2 {
+        font-size: 19px;
+    }
+
+    .skill-card {
+        min-height: 200px;
+    }
+
+    .learning-section {
+        padding: 23px;
+    }
+
+    .learning-section h2 {
+        font-size: 23px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
